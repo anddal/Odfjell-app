@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+#boddy{
+	margin: 50px 50px;
+	font-family: verdana;
+	width: 425px;
+}
+
+#logo{
+	width: 425px;
+}
+
+h2 {
+	text-align: center;
+	color: #003478;
+}
+
+.submitdiv {
+	border: 2px solid #a1a1a1;
+	padding: 10px 40px;
+	background: #dddddd;
+	width: 50px;
+	border-radius: 25px;
+}
+
+label{
+	float: left;
+	width: 130px;
+}
+
+input{
+	width: 250px;
+}
+select{
+	width: 250px;
+}
+fieldset{
+	border: 2px solid #a1a1a1;
+	border-radius: 25px;
+	margin: 50px;
+	padding: 20px;
+	width: 425px;
+}
+textarea{
+	width: 250px;
+}
+
+
+@media only screen and (max-width: 480px) {  
+#boddy{
+	margin: 0px 0px;
+	font-family: verdana;
+	max-width: 100%;
+}
+
+#logo{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	width: 90%;
+	float:center;
+}
+
+h2 {
+	text-align: center;
+	color: #003478;
+}
+
+.submitdiv {
+	border: 2px solid #a1a1a1;
+	padding: 10px 40px;
+	background: #dddddd;
+	width: 70%;
+	border-radius: 25px;
+}
+
+label{
+	float: left;
+	width: 100px;
+}
+
+input{
+	width: 100%;
+	float:right;
+}
+select{
+	width: 100%;
+	float:right;
+}
+fieldset{
+	/*border: 2px solid #a1a1a1;*/
+	border-radius: 5px;
+	margin: 0px;
+	padding: 2px;
+	width: 100%;
+}
+textarea{
+	width: 100%;
+	float:right;
+}
+
+tr:nth-child(-n+3) {display:none}
+#footer{display:none}
+h2 {display:none}
+}  

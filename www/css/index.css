@@ -1,0 +1,228 @@
+
+
+
+#header {
+	margin: 10px 10px 10px 10px; //
+	margin-left: auto; //
+	margin-right: auto;
+	max-width: 98%;
+}
+#headerIMG {
+
+	max-width: 100%;
+}
+
+#reporttype, #info, #safecard, .p {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: verdana;
+	text-align:center;
+	font-weight:bold;
+	color: #003478;
+//	width: 78%;
+}
+
+
+
+#safe, #unsafe{
+	height:130px;
+	width: 100%;
+	background-position: center;	
+	border: none;
+	margin-top:15px;
+}
+
+
+#safecard{
+	margin-right:-25px;
+}
+
+
+#clientDetails, #submitCdetail {
+	width: 100%;
+	height: 75px;
+
+}
+
+.photo {
+	width: 130%;
+}
+
+#send, #reset {
+	width: 100%;
+	height: 120px;
+	margin-bottom: 10px;
+	
+	//border: 5px none #C1BB00;
+	box-shadow: 2px 2px 3px #C1BB00;
+	
+}
+
+
+#submitCdetail {
+	
+	//height: 50px;
+	//background-image: url('../img/save.png');
+	//background-repeat: no-repeat;
+	//background-color: #007AC9;
+	//background-size: 40px 40px;
+	//border: 5px none #C1BB00;
+	//box-shadow: 2px 2px 3px #C1BB00;
+}
+
+#photodiv {
+	
+	//background-image: url('../img/camera.png');
+	background-repeat: no-repeat;
+	//background-color: #007AC9;
+	background-size: 60px ;
+	background-position: center;
+	border: 5px none #C1BB00;
+	box-shadow: 2px 2px 3px #C1BB00;
+	
+}
+
+#page1 {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	//width: 50%;
+	height: 50%;
+	background-color: transparent;
+}
+
+#clientInfo {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-height: 50%;
+	background-color: transparent;
+}
+
+#photosource {
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-height: 50%;
+	background-color: transparent;
+}
+
+#actionbuttons {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#capture, #gallery{
+	margin-top:2px;
+	height:70px;
+	line-height:170%;
+}
+
+#cardsuccess {
+	margin-top: 50px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-height: 100%;
+	text-align:center;
+	font-weight:bold;
+	color: #003478;
+}
+
+#cardfail {
+	margin-top: 50px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-height: 100%;
+	text-align:center;
+	font-weight:bold;
+	color: #003478;
+}
+
+#deleteImage
+{
+position:absolute;
+margin-left:20px;
+left:-14px;
+top:-10px;
+z-index:1;
+}
+
+#largeImage
+{
+box-shadow: 2px 2px 3px #C1BB00;
+margin-left:19px;
+margin-top:3px;
+
+}
+
+#loaderimage
+{
+position:absolute;
+text-align:center;
+padding-top:250px;
+z-index:7;
+}
+.ui-block-c{
+	position:relative;
+	margin-top:8px;
+	//margin-bottom:5px;
+	margin-left:-25px;
+	float:left;
+}
+.result{
+height:100px;	
+}
+
+.ui-collapsible-content{
+	background-color: #007AC9;
+}
+
+	
+}
+
+.ui-icon{
+	display:none;
+}
+.ui-grid-a{
+	overflow:visible;
+}
+
+.ui-block-a{
+	min-width:120px;
+}
+
+.ui-block-b{
+	
+	//margin-left: 20px;
+}
+.ui-field-contain{
+		margin-left: auto;
+	margin-right: auto;
+	width:100%;
+}
+.ui-field-contain .ui-select{
+width: 100%;
+display: inline-block;
+}
+
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search, .ui-field-contain div.ui-input-text {
+width: 100%;
+display: inline-block;
+}
+
+i.icon-4x{
+	line-height:170%;
+}
+i.icon-2x{
+	line-height:160%;
+}
+.ui-button-inner{
+	height:100%;
+}

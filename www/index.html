@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.css" />
+
+
+<script
+	src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+<script type="text/javascript" src="js/jquery.i18n.properties-1.0.9.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/odfjell.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+
+<title>OdfjellHSE</title>
+</head>
+<body>
+	<div id="header">
+		<img src="img/logo.png" id="headerIMG" />
+	</div>
+
+	<div id="all" data-role="content">
+		<div id="page1">
+			<div id=reporttype>
+				<p></p>
+			</div>
+			<div data-role="fieldcontain">
+
+					<a href="#" id="safe" data-role="button" data-theme="a"><i class="icon-thumbs-up icon-4x icon-white"></i></a>
+			</div>
+			<div data-role="fieldcontain">
+			<a href="#" id="unsafe" data-role="button" data-theme="a"><i class="icon-thumbs-down icon-4x icon-white"></i></a>
+			</div>
+			<div data-role="fieldcontain">
+				
+					<a href="#" id="clientDetails" data-role="button" data-theme="a"><i class="icon-cog icon-2x icon-white"></i></a>
+			</div>
+		</div>
+
+
+		<div id="clientInfo" style="display: none;">
+			<div data-role="content">
+				<div id=info>
+					<p></p>
+				</div>
+				<div data-role="fieldcontain">
+					<input name="" id="name" placeholder="Enter Name" value=""
+						type="text" class="reqInput" />
+
+				</div>
+
+				<div data-role="fieldcontain">
+					<input name="" id="number" placeholder="Phone number" value=""
+						type="tel" class="reqInput" />
+					<div id="errornumber"></div>
+				</div>
+
+				<div data-role="fieldcontain">
+					<select id="company" class="dropdown" data-theme="a">
+						<option value="1" disabled></option>
+					</select>
+				</div>
+
+				<div data-role="fieldcontain">
+					<select id="language" name="" data-theme="a" data-icon="arrow-d">
+
+						<option value="1" disabled></option>
+						<option value="2" id="en"></option>
+						<option value="3" id="no"></option>
+
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+
+					<a href="#" id="submitCdetail" data-role="button" data-theme="a"><i class="icon-save icon-2x icon-white"></i></a>
+					
+					
+				</div>
+
+<div id="errortext"></div>
+			</div>
+		</div>
+
+		<div data-role="content" id="content" style="display: none;">
+
+
+			<div id="card">
+				<div id=safecard data-role="fieldcontain">
+					
+					<h1>SAFE CARD</h1>
+					<br>
+				</div>
+				<div id="date" style="display: none;">
+					<input type="text" id="datepicker" />
+				</div>
+				<div data-role="fieldcontain">
+					<select id="project" class="dropdown" data-theme="a">
+						<option value="1" disabled selected></option>
+					</select>
+				</div>
+				<div data-role="fieldcontain" id="category_div">
+					<select id="category" class="dropdown" data-theme="a">
+						<option value="1" disabled selected></option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<textarea id="desc" rows="5" class="reqInputdesc"></textarea>
+				</div>
+				<div data-role="fieldcontain">
+					<div id="photodiv" class="ui-select backgroundimage photodiv"
+						data-role="collapsible" data-theme="a" data-content-theme="a">
+						<h3><i class="icon-camera icon-4x icon-white"></i></h3>
+
+						<div class="ui-grid-b">
+							<div class="ui-block-a">
+
+								<a href="#" id="capture" data-role="button" data-theme="a"
+									onclick="capturePhoto();"> <span class='ui-button-text'></span></a>
+
+
+
+								<a href="#" id="gallery" data-role="button" data-theme="a"
+									onclick="getPhoto(pictureSource.PHOTOLIBRARY);"> <span
+									class='ui-button-text'></span></a>
+
+							</div>
+							<div class="ui-block-b"></div>
+							<div class="ui-block-c">
+								<img style="display: none; width: 30px; height: 30px;"
+									id="deleteImage" src="img/delete.png" onclick="removePhoto();" />
+								<img style=" height: 120px; width:120px;" id="largeImage" src="" class="img-polaroid" />
+							</div>
+						</div>
+					</div>
+					<!-- /grid-b -->
+
+
+
+
+
+
+				</div>
+
+				<input type="hidden" id="newName" name="newName" /> <img
+					style="display: none; width: 110px; height: 110px;" id="largeImage"
+					src="" />
+				<div data-role="fieldcontain">
+					<div id="actionbuttons" class="ui-select">
+						<div class="ui-grid-a">
+
+							<div class="ui-block-a">
+								<a href="#" id="reset" data-role="button" data-theme="a"><i class="icon-remove-sign icon-4x icon-white"></i></a>
+							</div>
+							<div class="ui-block-b">
+
+								<a href="#" id="send" data-role="button" data-theme="a"><i class="icon-upload icon-4x icon-white"></i></a>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="cardsuccess" style="display: none;">
+		<img src="img/ok.png" class="result" /> <span class='ui-button-text'></span>
+		<p></p>
+		
+	</div>
+	<div id="cardfail" style="display: none;">
+		<img src="img/delete.png" class="result" /> <span class='ui-button-text'></span>
+		<p></p>
+
+	</div>
+	<div id="loaderimage"
+		style="display: none; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.9);">
+		<img src="img/ajax-loader.gif" />
+	</div>
+
+
+	<script type="text/javascript" src="js/cordova-2.6.0.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/i18n.js"></script>
+	<script type="text/javascript" src="js/camera.js"></script>
+	<script src="js/jquery-validate.js"></script>
+
+	<script type="text/javascript">
+		app.initialize();
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
